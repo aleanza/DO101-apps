@@ -1,0 +1,5 @@
+oc new-project update-myfirstapp
+oc new-app --name update-myfirstapp https://github.com/aleanza/DO101-apps.git#manual --context-dir version
+oc get pods
+oc get services
+oc expose service update-myfirstapp
